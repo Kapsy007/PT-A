@@ -1,0 +1,1 @@
+1import NextAuth from 'next-auth'; import EmailProvider from 'next-auth/providers/email'; export default NextAuth({ providers:[ EmailProvider({ server:{ host:'smtp.office365.com', port:587, auth:{ user:'kapil.dev.yadav@hotmail.com', pass:'Gungun@123' } }, from:'Portfolio Tracker <kapil.dev.yadav@hotmail.com>' }) ], secret:'replace-with-secure-secret' });
